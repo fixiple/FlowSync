@@ -10,6 +10,11 @@ has the following features:
 - a Pomodoro timer 
 - a youtube player that can fetch your google accounts playlists and videos and play them.
 
+# TODO FOR TaskList features
+[ ] passing a custom list prop
+[ ] adding data to the list
+
+==============================================================================================================================================================================
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
 
 ## Development server
