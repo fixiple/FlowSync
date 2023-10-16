@@ -1,9 +1,10 @@
 /* class definition of Task */
 export default class Task{
-    private _id: string;
+    private _id: string|number;
     private _label: string;
     
 
+    //better use-case for something else...
     private create_UUID(){
         var dt = new Date().getTime();
         var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -14,7 +15,7 @@ export default class Task{
         return uuid;
     }
 
-    public get id(): string {
+    public get id(): string|number {
         return this._id;
     }
 
@@ -27,9 +28,8 @@ export default class Task{
     
     }
 
-    constructor ( label: string) {
-    // notice that I am using myProp and not _myProp
-        this._id = this.create_UUID();
+    constructor ( id: number, label: string) {
+        this._id = id+1;
         this._label = label;
     }
 }

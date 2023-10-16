@@ -11,7 +11,7 @@ has the following features:
 - a youtube player that can fetch your google accounts playlists and videos and play them.
 
 # TODO FOR TaskList features
-[ ] passing a custom list prop
+[x] passing a custom list prop(kinda...)
 [ ] adding data to the list
 
 ==============================================================================================================================================================================

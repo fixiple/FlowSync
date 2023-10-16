@@ -1,4 +1,5 @@
 <p>task-list works!</p>
-<div *ngFor="let item of {list}">
-    <span>HELLO</span>
+<div *ngFor="let item of tasks">
+    <input type="checkbox" value={{item.label}} id={{item.id}}>
+    <label for={{item.id}}> {{item.label}}</label>
 </div>
