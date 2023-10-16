@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import Task from '../common/task';
+import Task from '../_common/task';
 
 
 @Component({
