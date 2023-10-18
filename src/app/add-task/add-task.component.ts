@@ -1,5 +1,4 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-import Task from '../_common/task';
 
 @Component({
   selector: 'add-task',
@@ -12,7 +11,7 @@ export class AddTaskComponent {
     @Output() newTaskEvent = new EventEmitter<string>();
 
     addNewTask(value: string) {
-        console.log("clicked");
+
         this.newTaskEvent.emit(value);
     }
 }

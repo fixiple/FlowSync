@@ -14,6 +14,7 @@ has the following features:
 - [x] passing a custom list prop
 - [x] adding data to the list
 - [ ] tasks that are done, have to be marked with the .done class
+    - [ ] how to check state of checkbox(if it's true or false), then if true add .done class to input
 
 
 ## optional features

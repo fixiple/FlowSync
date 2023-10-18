@@ -2,6 +2,7 @@
 export default class Task{
     private _id: number;
     private _label: string;
+    private _done: boolean;
     
 
     //better use-case for something else...
@@ -28,8 +29,18 @@ export default class Task{
     
     }
 
-    constructor ( id: number, label: string) {
+    public get done():boolean {
+        return this._done;
+    }
+
+    public set done(val: boolean) {
+        this._done = val;
+    
+    }
+
+    constructor ( id: number, label: string, done: boolean = false) {
         this._id = id;
         this._label = label;
+        this._done = done;
     }
 }
