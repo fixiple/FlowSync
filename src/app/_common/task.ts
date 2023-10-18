@@ -1,6 +1,6 @@
 /* class definition of Task */
 export default class Task{
-    private _id: string|number;
+    private _id: number;
     private _label: string;
     
 
@@ -15,7 +15,7 @@ export default class Task{
         return uuid;
     }
 
-    public get id(): string|number {
+    public get id(): number {
         return this._id;
     }
 
@@ -29,7 +29,7 @@ export default class Task{
     }
 
     constructor ( id: number, label: string) {
-        this._id = id+1;
+        this._id = id;
         this._label = label;
     }
 }
