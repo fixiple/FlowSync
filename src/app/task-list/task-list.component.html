@@ -1,5 +1,7 @@
 <p>task-list works!</p>
 <div *ngFor="let item of tasks">
-    <input type="checkbox" value={{item.label}} id={{item.id}}>
-    <label for={{item.id}}> {{item.label}}</label>
+    <label [ngClass]="item.done ? 'done' : ''" for={{item.id}}>
+        <input type="checkbox" value={{item.label}} id={{item.id}} [checked]="item.done" (change)="isValueClicked(item.done? true : false, item)" /> {{item.label}} 
+    </label>
 </div>
+<add-task (newTaskEvent)="addItem($event)"></add-task>
