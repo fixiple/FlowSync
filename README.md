@@ -10,16 +10,23 @@ has the following features:
 - a Pomodoro timer 
 - a youtube player that can fetch your google accounts playlists and videos and play them.
 
+----------
+
 # TODO for TaskList features
 - [x] passing a custom list prop
 - [x] adding data to the list
 - [x] tasks that are done, have to be marked with the .done class
     - [x] how to check state of checkbox(if it's true or false), then if true add .done class to input
 
-
 ## optional features
 - [ ] delete individual tasks
-- [ ] update of individual tasks
+- [ ] update of individual tasks (TIP: check how we added the .done class in a task for an implementation basis oh how to do it)
+
+---------
+# TODO for Pomodoro Timer features
+- [ ] implement the timer
+- [ ] add a play, stop and a reset button
+- [ ] implement custom time choice
 
 ----------
 ----------
