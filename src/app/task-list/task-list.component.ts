@@ -27,7 +27,10 @@ export class TaskListComponent{
         console.log(newTask.label+" added to List");
     }
 
-    /* if checkbox is clicked, will update boolean of current item*/
+    /* if checkbox is clicked, will update boolean of current item
+    check this : https://stackoverflow.com/a/5915833
+    */
+
     isValueClicked(event: any, item : Task){
         //console.log(event);
         let selected : number= this.tasks.indexOf(item);
