@@ -24,9 +24,11 @@ has the following features:
 
 ---------
 # TODO for Pomodoro Timer features
-- [ ] implement the timer
-- [ ] add a play, stop and a reset button
-- [ ] implement custom time choice
+- [x] implement the timer
+- [x] add a play, stop and a reset button
+- [x] implement custom time choice
+- [ ] fix BUG: about zero missing, if the timer has two positions in the minutes area
+- [ ] fix BUG: about if start button is pressed multiple times in a row, it will always keep going and the other buttons will not work properly
 
 ----------
 ----------

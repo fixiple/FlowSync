@@ -1,1 +1,13 @@
-<p>pomodoro works!</p>
+<p>{{display}}</p>
+<div>
+    <button (click)='startTimer()'>Start Timer</button>
+    <button (click)='pauseTimer()'>Pause</button>
+    <button (click)='resetTimer()'>Reset</button>
+    <button (click)='displayOwnTime()'>Set own Time</button>
+</div>
+
+<div *ngIf="setOwnTime">
+    <label for="newTime">Custom Time:</label>
+    <input type="number" id="newTime" #newTime>
+    <input type="button" value="SET" (click)="customTimer(newTime.value)"  (key.enter)="customTimer(newTime.value)">
+</div>
