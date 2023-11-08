@@ -12,7 +12,8 @@ export class PomodoroComponent {
      for implementation strategies for the timer and the stop / resume functions
     */
 
-    time: number = 600;
+    defaultTime: number = 60;
+    time: number = this.defaultTime;
     display: string = 'Press start!';
     interval: any = null;
     setOwnTime: boolean = false;
@@ -21,12 +22,13 @@ export class PomodoroComponent {
 
     startTimer() {
         this.interval = setInterval(() => {
-        if (this.time < 0) {
-            this.time--;
-        } else {
-            this.time--;
-        }
-        this.display=this.transform( this.time)
+            if (this.time > 0) {
+                this.time--;
+                this.display=this.transform(this.time);
+            } else {
+                clearInterval(this.interval);
+                this.display="Time's UP!";
+            }
         }, 1000);
     }
     transform(value: number): string {
@@ -42,14 +44,11 @@ export class PomodoroComponent {
     */ 
     pauseTimer() {
         clearInterval(this.interval);
-        this.interval=null;
     }
 
     resetTimer() {
         clearInterval(this.interval);
-        this.time=600;
         this.display='Press start!';
-        this.interval=null;
     }
 
     customTimer(customTime : string) {
@@ -57,8 +56,7 @@ export class PomodoroComponent {
         link: https://stackoverflow.com/a/14668510
         */
         this.time=+customTime;
-        this.display=this.transform(this.time)
-        this.interval=null;
+        this.display=this.transform(this.time);
     }
 
     displayOwnTime(){
