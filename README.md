@@ -27,8 +27,9 @@ has the following features:
 - [x] implement the timer
 - [x] add a play, stop and a reset button
 - [x] implement custom time choice
+- [ ] preview for the user (in frontend) of how much time is added in the customTime function
 - [ ] fix BUG: about zero missing, if the timer has two positions in the minutes area
-- [ ] fix BUG: about if start button is pressed multiple times in a row, it will always keep going and the other buttons will not work properly
+- [x] fix BUG: about if start button is pressed multiple times in a row, it will always keep going and the other buttons will not work properly
 
 ----------
 ----------
